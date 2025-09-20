@@ -13,7 +13,7 @@ app.use(express.static('public'));
 // Configurações (vais substituir pelos teus dados)
 const SHOPIFY_CONFIG = {
     shop: 'bastidorcolorido',
-    accessToken: 'process.env.SHOPIFY_TOKEN', // O token que obtiveste
+    accessToken: process.env.SHOPIFY_TOKEN, // O token que obtiveste
     apiVersion: '2023-10'
 };
 
@@ -612,5 +612,6 @@ app.listen(PORT, () => {
     console.log(`📊 Dashboard: http://localhost:${PORT}`);
     console.log(`💡 Substitui o token Shopify no código e depois testa!`);
 });
+
 
 module.exports = app;
