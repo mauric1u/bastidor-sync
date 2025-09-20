@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 // Configurações (vais substituir pelos teus dados)
 const SHOPIFY_CONFIG = {
-    shop: 'bastidorcolorido',
+    shop: 'bastidor-colorido-2-0',
     accessToken: process.env.SHOPIFY_TOKEN, // O token que obtiveste
     apiVersion: '2023-10'
 };
@@ -615,3 +615,4 @@ app.listen(PORT, () => {
 
 
 module.exports = app;
+
